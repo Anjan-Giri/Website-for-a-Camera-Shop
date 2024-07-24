@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Styling Navigation bar */
+.header{
+    width: 100%;
+    background: #696969;
+    padding: 10px;
+}
+.container{
+    max-width: 1350px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 35px;
+    color: black;
+    font-family: 'Lucida Handwriting', sans-serif;
+    font-weight: bold;
+}
+.logo a sup{
+    color: red;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+}
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+.nav-links li .current{
+    background: white;
+    color: black;
+}
+.nav-links li a:hover{
+    background: white;
+    color: black;
+}
+
+/* Styling Footer Section */
+.footer{
+    width: 100%;
+    background-image: conic-gradient(from 500deg, rgb(132, 122, 131),rgb(115, 217, 235));
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.footer-section h1{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.image-section{
+    text-align: center;
+}
+.image-section img{
+    width: 70px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.adress{
+    text-align: center;
+    margin-top: 20px;
+}
+.adress p{
+    display: inline;
+    margin-top: 20px;
+    font-size: 25px;
+    margin-left: 10px;
+    color: #050105;
+    font-weight: bolder;
+}

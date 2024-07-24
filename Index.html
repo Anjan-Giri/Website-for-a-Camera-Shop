@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Captured Nepal</title>
+    <meta name="description" content="The home page is the main template of our e-commerce website. This page includes differnt sections such as navigation bar, home content section, featured products section, annivarsary offer section, brands section and footer section. The navigation bar includes some links that is used to redirect different web pages. The home section includes some texts and images of products. The featured products section includes our store's most popular products. After that, the next section includes annivarsary offer product. Then, the brands section includes logo of popular company such as Sony, Nikon and Panasonic. Finally, the footer section includes our social media handles, address, phone number and email.">
+    <meta name="keywords" content="camera, camera equipments, online store, lenses, tripod, drone, bags, photography, mic, logo">
+    <meta name="author" content="Team-3: Bikash Bhattarai, Anjan Giri, Subhav Osti, Aayush Gharti">
+    <link rel="stylesheet" href="CSS/style.css"> 
+    <!-- Internal CSS -->
+    <style>
+        
+    /* Styling Home Section */
+    .home{
+        width: 100%;
+        background: #b0c4de;
+        padding: 80px 0; 
+    }
+    .home .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .text h1{
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .text p{
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .button{
+        text-decoration: none;
+        color: black;
+        background: rgb(112, 107, 105);
+        font-size: 20px;
+        border-radius: 30px;
+        padding: 8px 13px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .button:hover{
+        background: rgb(255, 164, 36);
+    }
+    .image img{
+        width: 100%;
+        transition: 0.6s;
+        cursor: pointer; 
+        padding: 0 10px;
+    }
+    .image img:hover{
+        transform: translateX(10px) translateY(-10px); 
+    }
+
+    /* Styling Featured Products */
+    .container .title{
+        font-size: 40px;
+        color: red;
+        text-decoration: underline;
+        text-align: center;
+        font-weight: bold;
+        padding: 70px 0;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .row .col{
+        flex-basis: 25%;
+        margin-bottom: 50px;
+        padding: 20px 10px;
+        transition: 0.6s;
+    }
+    .col:hover{
+        transform: translateY(-10px);
+        box-shadow: 5px 5px 15px 1px rgb(57, 55, 55);
+    }
+    .col img{
+        width: 300px;
+        height: 300px;
+    }
+    .btn{
+        text-decoration: none;
+        color: white;
+        background: black;
+        padding: 5px 10px;
+        border-radius: 25px;
+        transition: 0.3s;
+    }
+    .btn:hover{
+        color: white;
+        background: orangered;
+    }
+
+    /* Styling Offer Section */
+    .offer{
+        width: 100%;
+        background-color: #b0c4de;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 30px;
+    }
+    .offer .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .sony img{
+        width: 500px;
+        transition: 0.6s;
+        cursor: pointer;
+    }
+    .sony img:hover{
+        transform: translateX(10px) translateY(-10px);
+    }
+
+    /* Styling Brands Section */
+    .title-2{
+        font-size: 40px; 
+        text-align: center; 
+        text-decoration: underline; 
+        color: red;
+        margin-top: 50px;
+        font-weight: bold;
+    }
+    .brands img{
+        height: 200px;
+        width: 300px;
+        margin-right: 10px;
+    }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="Index.html">
+                    <p>CAPTURED<sup>NP</sup></p>
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="Index.html" class="current">HOME</a></li>
+                    <li><a href="Pages/Blog.html">BLOG</a></li>
+                    <li><a href="Pages/Products.html">PRODUCTS</a></li>
+                    <li><a href="Pages/Research.html">RESEARCH</a></li>
+                    <li><a href="Pages/Aboutus.html">ABOUT US</a></li>
+                    <li><a href="Pages/Feedback.html">FEEDBACK</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- Home Section -->
+    <div class="home">
+        <div class="container">
+            <div class="text">
+                <h1>Everything Is Here For You<br>Related to Camera!</h1>
+                <p>Change The Equipments, Feel Better The Quality</p>
+                <a href="Pages/Products.html" class="button">Explore More &#8594;</a>
+            </div>
+            <div class="image">
+                <img src="Images/product.png">
+            </div>
+        </div>
+    </div>
+
+<!-- Featured Products Section -->
+    <div class="container">
+        <p class="title">Popular Products</p>
+        <div class="row">
+            <div class="col">
+                <img src="Images/canon.jpg">
+                <h3 style="color: red; margin: 20px 0;">Canon RF 100mm f/2.8 L Macro IS USM Lens</h3>
+                <p style="line-height: 23px; text-align: justify;"><b>Description:</b> Engineered specifically for full-frame EOS R-series cameras, the RF 100mm f/2.8 L Macro IS USM Lens from Canon combines a medium-telephoto field of view with a sleek design and close-focusing performance.</p>
+                <br>
+                Rs: <b style="line-height: 25px; color: red;">1,50,000.00</b>
+                <br>
+                Rs: <del>2,00,000.00</del> <b style="color: red;">-25%</b>
+                <br>
+                <br>
+                <a href="Pages/Productdetails.html" class="btn">Buy Now &#8594;</a>
+            </div>
+            <div class="col">
+                <img src="Images/360.png">
+                <h3 style="color: red; margin: 20px 0;">Ricoh Theta SC2</h3>
+                <p style="line-height: 23px; text-align: justify;"><b>Description:</b> The Ricoh SC2 snaps smartphone-quality spherical stills using dual lenses. It stands up on its own, or can be mounted to a tripod, and works with an app for remote control. The camera is offered in several fun colors.It's a good fit for real estate and other.</p>
+                <br>
+                Rs: <b style="line-height: 25px; color: red;">65,000.00</b>
+                <br>
+                Rs: <del>1,00,000.00</del> <b style="color: red;">-35%</b>
+                <br>
+                <br>
+                <a href="Pages/Productdetails.html" class="btn">Buy Now &#8594;</a>
+            </div>
+            <div class="col">
+                <img src="Images/mic.png">
+                <h3 style="color: red; margin: 20px 0; text-align: justify;">Neat King Bee II</h3>
+                <p style="line-height: 23px; text-align: justify;"><b>Description:</b>This microphone is a stellar solution for capturing vocals and instruments with exceptional detail and accuracy. With Class A circuitry, the King Bee II refrains from adding noise to your tracks. </p>
+                <br>
+                Rs:<b style="line-height: 25px; color: red;">84,000.00</b>
+                <br>
+                Rs:<del>1,20,000.00</del> <b style="color: red;">-30%</b>
+                <br>
+                <br>
+                <a href="Pages/Productdetails.html" class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+
+<!-- Offer Section -->
+    <div class="offer">
+        <div class="container">
+           <div class="sony">
+                <img src="Images/sony.png">
+           </div>
+           <div class="text-2">
+                <p style="color: red; font-size: 50px; margin-bottom: 20px; font-weight: bold;">Anniversary Offer</p>
+                <h1 style="margin-bottom: 10px; font-size: 50px;">The Sony A7R IV</h1>
+                <p style="line-height: 35px; font-size: 20px; font-weight: bold; margin-bottom: 20px;">The Sony a7R IV is the company's fourth generation, high-resolution full-frame mirrorless camera and is built around a BSI-CMOS sensor that outputs 60.2MP images. Despite its high resolution, it can shoot at up to 10 frames per second with full autofocus and shoot 4K video.</p>
+                <a href="Pages/Productdetails.html" class="btn">Buy Now &#8594;</a>
+           </div>
+        </div>
+    </div>
+
+<!-- Brands Section -->
+    <div class="container">
+        <p class="title-2">Supported By:</p>
+        <div class="row">
+            <div class="brands">
+                <a href="https://www.sony.com/en/" target="_blank">
+                <img src="Images/sonylogo.png">
+                </a>
+            </div>
+            <div class="brands">
+                <a href="https://www.nikon.com/" target="_blank">
+                <img src="Images/nikonlogo.png">
+                </a>
+            </div>
+            <div class="brands">
+                <a href="https://shop.panasonic.com/" target="_blank">
+                <img src="Images/panasonic.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+<!-- Footer Section -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h1>Social Media:</h1>
+                <div class="image-section">
+                    <a href="#">
+                        <img src="Images/insta.png">
+                    </a>
+                    <a href="#">
+                        <img src="Images/facebook.png">
+                    </a>
+                    <a href="#">
+                        <img src="Images/wiki.png">
+                    </a>
+                    <a href="#">
+                        <img src="Images/twitter.png">
+                    </a>
+                </div>
+                <div class="adress">
+                    <p>Address: Durbar Marg, Kathmanu</p>
+                    <p>Phone: 098-456-234</p>
+                    <p>Email: captured.np45@hotmail.com</p>
+                </div>        
+            </div>
+        </div>
+    </div>
+</body>
+</html>

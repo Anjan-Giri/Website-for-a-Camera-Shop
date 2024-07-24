@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Captured Nepal</title>
+    <meta name="description" content="The Feedback form page includes navigation bar, feedback form and footer section. The navigation bar is same as our main/home page. The feedback form includes one form with various fields such as first name, last name, email, and one message area. Finally, the footer section includes our social media handles, address, phone number and email.">
+    <meta name="keywords" content="camera, camera equipments, online store, lenses, tripod, drone, bags, photography, mic">
+    <meta name="author" content="Team-3: Bikash Bhattarai, Anjan Giri, Subhav Osti, Aayush Gharti">
+    <link rel="stylesheet" href="../CSS/style.css"> 
+    <script src="../JavaScript/Maina.js"></script>
+    <!-- Internal CSS -->
+    <style>
+
+    /* Styling Feedback Form Section */
+    .background{
+        width: 100%;
+        height: 100vh;
+        background-color: #b0c4de;
+    }
+    .container{
+        max-width: 1350px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .title{
+        text-align: center;
+        padding-top: 20px;
+        font-size: 40px;
+        color: black;
+    }
+    .box{
+        height: 600px;
+        width: 600px;
+        margin: 20px auto;
+    }
+    .box form{
+        height: 600px;
+        width: 550px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        background-image: conic-gradient(from 500deg, rgb(40, 39, 40),rgb(36, 115, 164));
+        padding: 30px;
+        border-radius: 30px;       
+    }
+    form h3{
+        text-align: center;
+        font-size: 40px;
+        color: white;
+    }
+    form b{
+        font-size: 20px;
+        padding: 8px 0;
+        color: white;
+    }
+    form input{
+        padding: 8px;
+        border-radius: 20px;
+        border: none;
+        margin: 5px 0;
+        outline: none;
+    }
+    form .message{
+        border-radius: 20px;
+        border: none;
+        padding: 8px;
+        font-size: 15px;
+        font-weight: bold;
+        outline: none;
+    }
+    input[type="text"]{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    form .button{
+        text-align: center;
+        height: 30px;
+        width: 80px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        background: rgb(204, 204, 215);
+        color: black;
+        transition: 0.3s;
+    }
+    form .button:hover{
+        background: white;
+    }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar Section -->
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../Index.html">
+                    <p>CAPTURED<sup>NP</sup></p>
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="../Index.html">HOME</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Products.html">PRODUCTS</a></li>
+                    <li><a href="Research.html">RESEARCH</a></li>
+                    <li><a href="Aboutus.html">ABOUT US</a></li>
+                    <li><a href="Feedback.html" class="current">FEEDBACK</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- Feedback Form Section -->
+    <div class="background">
+        <div class="container">
+            <h1 class="title">Thanks For Choosing Us!</h1>
+            <div class="box">
+                <form name="messageForm" id= "myForm" onsubmit="validateForm(event)">
+                    <h3>Feedback Form</h3>
+                    <b>First Name:</b>
+                    <input type="text" name="fname" id="fname">                  
+
+                    <b>Middle Name:</b>
+                    <input type="text" name="middlename">
+
+                    <b>Last Name:</b>
+                    <input type="text" name="lname" id="lname">
+                    
+                    <b>Email:</b>
+                    <input type="text" name="email" placeholder="domain@gmail.com" id="email">
+                    
+                    <b>Message:</b>
+                    <textarea name="message" rows="10" cols="20" placeholder="write a message" class="message" id="message"></textarea>                   
+
+                    <input type="Submit" value="Submit" class="button">
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer Section -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-section">
+            <h1>Social Media:</h1>
+            <div class="image-section">
+                <a href="#">
+                    <img src="../Images/insta.png">
+                </a>
+                <a href="#">
+                    <img src="../Images/facebook.png">
+                </a>
+                <a href="#">
+                    <img src="../Images/wiki.png">
+                </a>
+                <a href="#">
+                    <img src="../Images/twitter.png">
+                </a>
+            </div>
+            <div class="adress">
+                <p>Address: Durbar Marg, Kathmanu</p>
+                <p>Phone: 098-456-234</p>
+                <p>Email: captured.np45@hotmail.com</p>
+            </div>        
+        </div>
+    </div>
+</div>
+</body>
+</html>

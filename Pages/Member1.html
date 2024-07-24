@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Captured Nepal</title>
+    <meta name="description" content="The Member details page includes navigation bar, individual information section and footer section. The navigation bar includes links that is used to redirect in different pages such as Home, Blog, About us, Feedback etc. The individual information section includes one box with two colums. The left colum includes an image of member, profession, address etc. And the right colum includes brief information, education background, experience and skills of a member. Finally, the footer section includes our social media handles, address, phone number and email.">
+    <meta name="keywords" content="camera, camera equipments, online store, lenses, tripod, drone, bags, photography, mic">
+    <meta name="author" content="Team-3: Bikash Bhattarai, Anjan Giri, Subhav Osti, Aayush Gharti">
+    <link rel="stylesheet" href="../CSS/Style.css"> 
+    <!-- Internal CSS -->
+    <style>
+
+    /* Styling Individual Information Section */
+    .small-container{
+        display: flex;
+        padding: 50px;
+    }
+    .column-1{
+        border: 2px solid tomato;
+        padding: 20px;
+        text-align: center;
+    }
+    .column-1 .image img{
+        height: 200px;
+        width: 200px;
+        margin-left: 10px;
+        border: 3px solid black;
+        object-fit: cover;
+    }
+    .column-1 .name h1, h2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 40px;        
+    }
+    .social-media h1{
+        text-decoration: underline;
+        color: red;
+        margin-top: 10px;
+        margin-bottom: 20px;  
+        font-size: 30px;
+    }
+    .social-media img{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .social-media li{
+        list-style: none;
+        margin: 5px 0;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    /* Styling Details Section */
+    .column-2{
+        border: 2px solid salmon;
+        padding: 20px;
+    }
+    .aboutme p{
+        text-align: justify;
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+    .education li{
+        list-style-position: inside;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .experience li{
+        list-style-position: inside;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .skill li{
+        list-style-position: inside;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../Index.html">
+                    <p>CAPTURED<sup>NP</sup></p>
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="../Index.html">HOME</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Products.html">PRODUCTS</a></li>
+                    <li><a href="Research.html">RESEARCH</a></li>
+                    <li><a href="Aboutus.html" class="current">ABOUT US</a></li>
+                    <li><a href="Feedback.html">FEEDBACK</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- Individual Information Section -->
+    <div class="container">
+        <div class="small-container">
+            <div class="column-1">
+                <div class="image">
+                    <img src="../Images/bikash.jpg">
+                </div>
+                <div class="name">
+                    <h1>BIKASH<br>BHATTARAI</h1>
+                    <h2>BSc(Hons) Computing Student</h2>
+                </div>
+                <div class="social-media">
+                    <h1>CONTACT:</h1>
+                    <a href="#">
+                        <img src="../Images/insta.png">
+                    </a>
+                    <a href="#">
+                        <img src="../Images/facebook.png">
+                    </a>
+                    <a href="#">
+                        <img src="../Images/wiki.png">
+                    </a>
+                    <a href="#">
+                        <img src="../Images/twitter.png">
+                    </a>
+                    <ul>
+                        <li>Address: Kalanki, Kathmandu</li>
+                        <li>Phone: 908-678-546</li>
+                        <li>Email: bikash.bhattarai@gmail.com</li>
+                    </ul>
+                    <p style="font-size: 25px; font-weight: bold; margin-top: 70px;">Coding isn't a writting code, it's a expressing our thoughts!</p>
+                </div>
+            </div>
+
+        <!-- Details Section -->
+            <div class="column-2">
+                <div class="aboutme">
+                    <h1 style="color: red;">&#x1F464;ABOUT ME</h1>
+                    <p>Hello! I am Bikash Bhattarai and I study BSc(Hons) Computing at Islington College. I loved to learn coding since early age of my life. I used to create non-responsive website when I was in class 11. The reason behind choosing this course, I want to know how does big IT Company manage data and provide good services such as Google, Twitter, Microsoft etc. I always wanted to learn new skills, gathering valuable Information, knowledge related to technlogy and I am happy for that I choosen my passion.</p>
+                </div>
+                <div class="education">
+                    <h1 style="color: red;">&#127891;EDUCATION</h1>
+                    <ul>
+                        <li>Schooling Graduation From BBAS Memorial School</li>
+                        <li>+2 From Trinity International Collge</li>
+                        <li>BSC(hons)Computing From Islington Collge</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h1 style="color: red; margin-top: 30px;">&#128340;EXPERIENCE</h1>
+                    <ul>
+                        <li>Volunteering at Islington College</li>
+                        <li>5 months as Internship</li>
+                        <li>6 months at Freelancing</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h1 style="color: red; margin-top: 30px;">&#x1F4BB;SKILLS</h1>
+                    <ul>
+                        <li>Good Speaking Skill</li>
+                        <li>Briefly Understandable Of Progamming Language</li>
+                        <li>Good Marketing Skill</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer Section -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h1>Social Media:</h1>
+                <div class="image-section">
+                    <a href="#">
+                        <img src="../Images/insta.png">
+                    </a>
+                    <a href="#">
+                        <img src="../Images/facebook.png">
+                    </a>
+                    <a href="#">
+                        <img src="../Images/wiki.png">
+                    </a>
+                    <a href="#">
+                        <img src="../Images/twitter.png">
+                    </a>
+                </div>
+                <div class="adress">
+                    <p>Address: Durbar Marg, Kathmanu</p>
+                    <p>Phone: 098-456-234</p>
+                    <p>Email: captured.np45@hotmail.com</p>
+                </div>        
+            </div>
+        </div>
+    </div>
+</body>
+</html>

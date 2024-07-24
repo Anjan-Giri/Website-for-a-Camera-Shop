@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Captured Nepal</title>
+    <meta name="description" content="The Products page consists of various sections such as navigation bar, selection button, all products section, page button and footer section. The navigation bar is same as our main page. The selection button is used to select products. The products section consists of 8 products with a short description, an image, price and buy now button. The page button is used to redirect in different products page. Finally, the footer section includes our social media handles, address, phone number and email.">
+    <meta name="keywords" content="camera, camera equipments, online store, lenses, tripod, drone, bags, photography, mic">
+    <meta name="author" content="Team-3: Bikash Bhattarai, Anjan Giri, Subhav Osti, Aayush Gharti">
+    <link rel="stylesheet" href="../CSS/style.css"> 
+    <!-- Internal CSS -->
+    <style>
+
+    /* Styling Selection Products */
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+    .hero h1{
+        font-size: 40px;
+        text-decoration: underline;
+    }
+    .select-option select{
+        font-size: 20px;
+        padding: 6px 10px;
+        border-radius: 10px;
+        margin-right: 100px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+    .select-option select:hover{
+        background: rgb(44, 41, 40);
+        color: white;
+    }
+    .select-option select option{
+        background: white;
+        color: black;
+    }
+
+    /* Styling All Products Section */
+    .row-1{
+        display: flex;
+        justify-content: space-around;
+    }
+    .row-1 .col-1{
+        flex-basis: 25%;
+        margin-bottom: 50px;
+        padding: 20px 10px;
+        transition: 0.6s;
+    }
+    .col-1:hover{
+        transform: translateY(-10px);
+    }
+    .col-1 img{
+        width: 250px;        
+    }
+    .btn{
+        text-decoration: none;
+        color: white;
+        background: black;
+        padding: 5px 10px;
+        border-radius: 25px;
+        transition: 0.3s;
+    }
+    .btn:hover{
+        color: white;
+        background: orangered;
+    }
+
+    /* Styling Page-button */
+    .page-btn{
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    .page-btn p{
+        margin-left: 15px;
+        border: 3px solid red;
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .page-btn p:hover{
+        background: orangered;
+        color: white;
+    }
+
+    /* Styling Changing Page Section */
+    .box-1, .box-2, .box-3, .box-4{
+        display: none;
+    }
+    </style>
+</head>
+<body id="scroll">
+
+<!-- Navigation Bar Section -->
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../Index.html">
+                    <p>CAPTURED<sup>NP</sup></p>
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="../Index.html">HOME</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Products.html" class="current">PRODUCTS</a></li>
+                    <li><a href="Research.html">RESEARCH</a></li>
+                    <li><a href="Aboutus.html">ABOUT US</a></li>
+                    <li><a href="Feedback.html">FEEDBACK</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- Selection Section -->
+    <div class="container">
+        <div class="hero">
+            <h1>All Products</h1>
+            <div class="select-option">
+                <select>
+                    <option>Default</option>
+                    <option>Camera</option>
+                    <option>Lens</option>
+                    <option>Drone</option>
+                    <option>Tripod</option>
+                    <option>Bags</option>
+                    <option>Mic</option>
+                    <option>Battery</option>
+                    <option>Others</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+<!-- All Products Section -->
+    <div class="container">
+        
+    <!-- 1st Page -->
+        <div class="box-1" id="1">
+            <h1 style="margin-top: 10px; text-decoration: underline;">Camera Lenses</h1>
+            <div class="row-1">
+                <div class="col-1">
+                    <img src="../Images/Products/Product-1.png">
+                    <h2 style="color: red; margin: 20px 0;">Canon EF 100-400mm Lens</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>A compact, high-performance 100-400mm zoom lens that’s ideal for those shooting sports, action and wildlife photography. </p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">1,50,000.00</b>
+                    <br>
+                    Rs: <del>2,00,000.00</del> <b style="color: red;">-25%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-2.jpg">
+                    <h2 style="color: red; margin: 20px 0;">Sony E Mount Apsc Lens Sel</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>It is compact, high resolution F2.8 APS-C standard zoom G lens. Sony Nano AR Coating to eliminate flare and ghosting.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">1,53,000.00</b>
+                    <br>
+                    Rs: <del>1,80,000.00</del> <b style="color: red;">-15%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-3.jpg">
+                    <h2 style="color: red; margin: 20px 0;">Panasonic Lumix S PRO f/2.8 Lens</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>This lens is an L-mount wide-angle to short-telephoto lens characterized by its constant f/2.8 maximum aperture and sophisticated optical design. </p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">75,000.00</b>
+                    <br>
+                    Rs: <del>1,00,000.00</del> <b style="color: red;">-25%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-4.jpg">
+                    <h2 style="color: red; margin: 20px 0;">Nikon AF-S NIKKOR f/2.8G Lens</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>The fast, ultra-wide-angle AF-S Zoom-NIKKOR f/2.8G ED is optimized for edge-to-edge sharpness on both FX- and DX-format Nikon D-SLR cameras.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">2,10,000.00</b>
+                    <br>
+                    Rs: <del>3,00,000.00</del> <b style="color: red;">-25%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+            <h1 style="margin-top: 10px; text-decoration: underline;">Branded Camera</h1>
+            <div class="row-1">
+                <div class="col-1">
+                    <img src="../Images/Products/Product-5.jpg">
+                    <h2 style="color: red; margin: 20px 0;">Panasonic FZ2000 Zwart Camera</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>The Panasonic LUMIX DMC-FZ2000 is a super-zoom camera featuring a 20x zoom lens equivalent to 3-inch 1040K-pixel rotating LCD touchscreen.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">1,35,000.00</b>
+                    <br>
+                    Rs: <del>1,50,000.00</del> <b style="color: red;">-10%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-6.jpg">
+                    <h2 style="color: red; margin: 20px 0;">Sony Cyber-Shot RX10 IV Camera</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>The Sony Cyber-Shot RX10 IV is far more than a sturdy, intelligent inclusive compact, it contains innovative technology for even professionals.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">1,50,000.00</b>
+                    <br>
+                    Rs: <del>2,00,000.00</del> <b style="color: red;">-25%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-7.jpg">
+                    <h2 style="color: red; margin: 20px 0;">Canon EOS R Mirrorless Digital Camera</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>This camera has 30.3MP full- frame CMOS sensor. The EOS R camera is designed to work effortlessly with RF lenses.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">2,32,000.00</b>
+                    <br>
+                    Rs: <del>2,90,000.00</del> <b style="color: red;">-20%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-8.jpg">
+                    <h2 style="color: red; margin: 20px 0;">Canon Mirrorless DSLR Camera</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>This camera has WIFI and Bluetooth, SD UHS-II Card Slot. The EOS R is poised to be the means from which to make the most of a new series of lenses.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">2,10,000.00</b>
+                    <br>
+                    Rs: <del>3,00,000.00</del> <b style="color: red;">-30%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+
+    <!-- 2nd Page -->
+        <div class="box-2" id="2">
+            <h1 style="margin-top: 10px; text-decoration: underline;">New Tripod</h1>
+            <div class="row-1">
+                <div class="col-1">
+                    <img src="../Images/Products/Product-9.png">
+                    <h2 style="color: red; margin: 20px 0;">Hama Profil Duo 150cm Adjustable Tripod</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>This tripod is 3D tilt head for perfect alignment for landscape and portrait shots.Quick-release plate for quickly changing the camera.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">15,000.00</b>
+                    <br>
+                    Rs: <del>20,000.00</del> <b style="color: red;">-25%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-10.jpg">
+                    <h2 style="color: red; margin: 20px 0;">UURIG TP-02 Multi-functional Tripod</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>This tripod can work as a handheld extendable selfie stick, also can be placed on the desktop as a tripod, perfect for selfies, group photos, vlogging.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">34,000.00</b>
+                    <br>
+                    Rs: <del>40,000.00</del> <b style="color: red;">-15%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-11.png">
+                    <h2 style="color: red; margin: 20px 0;">GorillaPod 500 Camera Stand</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>The GorillaPod 500 Flexible Tripod has legs made up of several joints that enable you to wrap it around objects and adapt it for use on uneven ground.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">24,600.00</b>
+                    <br>
+                    Rs: <del>30,000.00</del> <b style="color: red;">-18%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-12.jpg">
+                    <h2 style="color: red; margin: 20px 0;">Nee Pho NP-888 Multi Function Tripod</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>This tripod is composed of aluminum alloy and high-quality plastics with universal functions for years of smooth service.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">42,000.00</b>
+                    <br>
+                    Rs: <del>60,000.00</del> <b style="color: red;">-30%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+            <h1 style="margin-top: 10px; text-decoration: underline;">Camera Drone</h1>
+            <div class="row-1">
+                <div class="col-1">
+                    <img src="../Images/Products/Product-13.png">
+                    <h2 style="color: red; margin: 20px 0;">DJI Mavic 3 Pro Camera Drone</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>The drone has features next-level imaging performance. This's triple-camera system ushers in a new era of camera drones by housing three sensors.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">60,000.00</b>
+                    <br>
+                    Rs: <del>80,000.00</del> <b style="color: red;">-25%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-14.png">
+                    <h2 style="color: red; margin: 20px 0;">Phanton 4 Series Camera Drone</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>This is an extremely smart flying camera able to intelligently track objects without a separate device, avoid obstacles and fly with a tap of your finger. </p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">1,50,000.00</b>
+                    <br>
+                    Rs: <del>2,00,000.00</del> <b style="color: red;">-25%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-15.jpg">
+                    <h2 style="color: red; margin: 20px 0;">Sony ARSS1 Airpeak S1 Drone</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>This is an ideal choice, as it allows you to utilize your existing Alpha camera and library of lenses, and it keeps you within the Sony digital ecosystem. </p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">6,40,000.00</b>
+                    <br>
+                    Rs: <del>8,00,000.00</del> <b style="color: red;">-20%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-16.jpg">
+                    <h2 style="color: red; margin: 20px 0;">Sony Airpeak S1 Professional Drone</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>In this drone, we can use our own camera and lenses. It supports Alpha Series and FX3 Cameras. It can hold wind resistance up to 44.7 mph.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">3,00,000.00</b>
+                    <br>
+                    Rs: <del>5,00,000.00</del> <b style="color: red;">-40%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+
+    <!-- 3rd Page -->
+        <div class="box-3" id="3">
+            <h1 style="margin-top: 10px; text-decoration: underline;">Camera Bags</h1>
+            <div class="row-1">
+                <div class="col-1">
+                    <img src="../Images/Products/Product-17.png">
+                    <h2 style="color: red; margin: 20px 0;">ORCA CAMERA SHOULDER BAG</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>Lightweight and versatile, the OR-40 is expertly designed to carry and protect your video camera and accessories in-studio.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">7,200.00</b>
+                    <br>
+                    Rs: <del>8,000.00</del> <b style="color: red;">-10%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-18.png">
+                    <h2 style="color: red; margin: 20px 0;">"PILOT" TRAVEL CAMERA BAG</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>The "Pilot" Travel Camera Bag is a popular choice among photographers and travelers due to its compact size and functional design.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">27,000.00</b>
+                    <br>
+                    Rs: <del>30,000.00</del> <b style="color: red;">-10%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-19.png">
+                    <h2 style="color: red; margin: 20px 0;">K&F Pro-Shooter Backpack</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>An exceptionally well designed, spacious and stylish camera bag for the true working professional, made to the highest standards.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">16,000.00</b>
+                    <br>
+                    Rs: <del>20,000.00</del> <b style="color: red;">-20%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-20.png">
+                    <h2 style="color: red; margin: 20px 0;">S17 DSLR Camera Backpack</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>The high-quality nylon and fabric construction is reinforced with thick padding to always protects your device, also provide comfort and allow air to flow.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">21,000.00</b>
+                    <br>
+                    Rs: <del>30,000.00</del> <b style="color: red;">-30%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+            <h1 style="margin-top: 10px; text-decoration: underline;">Camera Mic</h1>
+            <div class="row-1">
+                <div class="col-1">
+                    <img src="../Images/Products/Product-21.png">
+                    <h2 style="color: red; margin: 20px 0;">RAZER SEIREN V2 PRO Mic</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>The Razer Seiren V2 Pro can automatically adjust its mic gain to prevent clipping and peaking, so you needn't worry about voice distortion when things get loud.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">60,000.00</b>
+                    <br>
+                    Rs: <del>80,000.00</del> <b style="color: red;">-25%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-22.png">
+                    <h2 style="color: red; margin: 20px 0;">JB01675-BWW Wireless Mic</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>This powerful but lightweight microphone features a Hytrel Double Point Duo-Lyre designed by Rycote team to isolate unwanted vibrations. It support multi-device.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">42,500.00</b>
+                    <br>
+                    Rs: <del>50,000.00</del> <b style="color: red;">-15%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-23.jpeg">
+                    <h2 style="color: red; margin: 20px 0;">S20 On-camera Microphone</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>This mic is featuring a dual microphone combination and supporting stereo recording mode for greater presence/stereo sound pick-up. It is made up Aluminum Alloy.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">1,50,000.00</b>
+                    <br>
+                    Rs: <del>2,00,000.00</del> <b style="color: red;">-25%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-24.jpg">
+                    <h2 style="color: red; margin: 20px 0;">Sony C8ooG Microphone Rental</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>The Sony C800G is a highly regarded and sought-after microphone known for its warm, detailed sound and versatility. It's commonly used in professional recording studios.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">90,000.00</b>
+                    <br>
+                    Rs: <del>1,20,000.00</del> <b style="color: red;">-25%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+
+    <!-- 4th Page -->
+        <div class="box-4" id="4">
+            <h1 style="margin-top: 10px; text-decoration: underline;">Camera Battery</h1>
+            <div class="row-1">
+                <div class="col-1">
+                    <img src="../Images/Products/Product-25.jpg">
+                    <h2 style="color: red; margin: 20px 0;">BM Premium LP-E6NH Battery</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>The BM Premium LP-E6NH battery is a third-party replacement battery designed to be compatible with select Canon cameras that use the LP-E6NH battery pack.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">20,000.00</b>
+                    <br>
+                    Rs: <del>25,000.00</del> <b style="color: red;">-20%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-26.jpg">
+                    <h2 style="color: red; margin: 20px 0;">Powerextra NP-W126 Battery</h2>
+                    <p style="line-height: 23px; text-align: justify;">The Powerextra NP-W126 is a type of rechargeable lithium-ion battery specifically designed for Fujifilm X series digital cameras. It serves as a replacement for the original Fujifilm NP-W126 battery.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">12,000.00</b>
+                    <br>
+                    Rs: <del>15,000.00</del> <b style="color: red;">-20%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-27.jpg">
+                    <h2 style="color: red; margin: 20px 0;">Neewer NP-FZ100 Batteries</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>This batteries are rechargeable lithium-ion batteries designed for use with Sony Alpha mirrorless cameras. These batteries serve as replacements for the original Sony.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">45,000.00</b>
+                    <br>
+                    Rs: <del>60,000.00</del> <b style="color: red;">-25%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-28.jpg">
+                    <h2 style="color: red; margin: 20px 0;">Wasabi Power Battery (3-Pack)</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>The Wasabi Power Battery (3-Pack) is a set of rechargeable lithium-ion batteries commonly used as replacements or backups for various camera models. </p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">7,200.00</b>
+                    <br>
+                    Rs: <del>8,000.00</del> <b style="color: red;">-10%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+            <h1 style="margin-top: 10px; text-decoration: underline;">Other Products</h1>
+            <div class="row-1">
+                <div class="col-1">
+                    <img src="../Images/Products/Product-29.jpg">
+                    <h2 style="color: red; margin: 20px 0;">Samsung Pendrive 128GB</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b> Samsung pen drives typically use USB 3.0 or USB 3.1 technology, which provides faster data transfer speeds compared to older USB 2.0 drives. </p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">1,200.00</b>
+                    <br>
+                    Rs: <del>1,500.00</del> <b style="color: red;">-20%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-30.png">
+                    <h2 style="color: red; margin: 20px 0;">Camera Strap</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>A camera strap is a device used to secure and carry a camera around your neck or shoulder. It is designed to provide comfort and convenience.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">3,060.00</b>
+                    <br>
+                    Rs: <del>3,600.00</del> <b style="color: red;">-15%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-31.png">
+                    <h2 style="color: red; margin: 20px 0;">Lens Cleaning Kit</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description:</b>A camera cleaner kit is a set of tools and supplies designed to help you clean and maintain your camera equipment.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">4,500.00</b>
+                    <br>
+                    Rs: <del>5,000.00</del> <b style="color: red;">-10%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="../Images/Products/Product-32.png">
+                    <h2 style="color: red; margin: 20px 0;">Ring Light 12</h2>
+                    <p style="line-height: 23px; text-align: justify;"><b>Description;</b>TA ring light is a lighting device that consists of a circular arrangement of small LED bulbs or fluorescent tubes.</p>
+                    <br>
+                    Rs: <b style="line-height: 25px; color: red;">1,800.00</b>
+                    <br>
+                    Rs: <del>1,980.00</del> <b style="color: red;">-10%</b>
+                    <br>
+                    <br>
+                    <a href="Productdetails.html" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Page Button Section -->
+    <div class="container">
+        <div class="page-btn" onclick="toggle()">
+            <p onclick="myfunction()">1</p>
+            <p onclick="myfunction()">2</p>
+            <p onclick="myfunction()">3</p>
+            <p onclick="myfunction()">4</p>
+        </div>
+    </div>
+
+<!-- Footer Section -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h1>Social Media:</h1>
+                <div class="image-section">
+                    <a href="#">
+                        <img src="../Images/insta.png">
+                    </a>
+                    <a href="#">
+                        <img src="../Images/facebook.png">
+                    </a>
+                    <a href="#">
+                        <img src="../Images/wiki.png">
+                    </a>
+                    <a href="#">
+                        <img src="../Images/twitter.png">
+                    </a>
+                </div>
+                <div class="adress">
+                    <p>Address: Durbar Marg, Kathmanu</p>
+                    <p>Phone: 098-456-234</p>
+                    <p>Email: captured.np45@hotmail.com</p>
+                </div>        
+            </div>
+        </div>
+    </div>
+
+<!-- Javascript for Changing Full Page -->
+    <script type="text/javascript">
+        function myfunction(){
+            var scrollSlide = document.getElementById("scroll");
+            scrollSlide.scrollIntoView();
+        }
+        function toggle(){
+        var box1 = document.getElementById('1');
+        var box2 = document.getElementById('2');
+        var box3 = document.getElementById('3');
+        var box4 = document.getElementById('4');
+
+        if(box1.style.display == "block"){
+            box1.style.display = "none";
+            box2.style.display = "block";
+        }
+        else if(box2.style.display == "block"){
+            box2.style.display = "none";
+            box3.style.display = "block";
+        }
+        else if(box3.style.display == "block"){
+            box3.style.display = "none";
+            box4.style.display = "block";
+        }
+        else if(box4.style.display == "block"){
+            box4.style.display = "none";
+            box1.style.display = "block";
+        }
+        }
+        document.getElementById('1').style.display = "block";  
+    </script>
+</body>
+</html>
